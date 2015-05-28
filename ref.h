@@ -16,6 +16,6 @@
 #define ref_new(type)           ref_new_##type ()
 #define ref_acquire(ref)        {ref->c++; ref->l++;}
 #define ref_release(ref)        if(!--ref->c){free(ref->o); free(ref);}
-#define ref_val(ref)            *(ref->o)
+#define ref_val(ref)            (*(ref->o))
 
 #endif

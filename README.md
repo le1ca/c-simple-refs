@@ -32,7 +32,7 @@ When the number of acquired references to an instance drops to zero, the instanc
     
 ## Running the tests
 
-A shell script is included which compiles and runs the 3 included test/example programs. You will need `gcc` and `valgrind` (and `bash`) to run this script.
+A shell script is included which compiles and runs the 3 included test/example programs. You will need `gcc` and `valgrind` (and `bash`, `grep`, and `awk`) to run this script.
 
 ## Caveats
 

@@ -18,7 +18,12 @@ void bar(ref_type(int) x){
 }
 
 int main(int argc, char** argv){
-        ref_type(int) newint = ref_new(int);
+	ref_type(int) newint;
+	
+	(void) argc;
+	(void) argv;
+
+        newint = ref_new(int);
         ref_acquire(newint);
         
         ref_val(newint) = 42;

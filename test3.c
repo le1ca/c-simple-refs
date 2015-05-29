@@ -3,7 +3,11 @@
 ref_define(long)
     
 int main(int argc, char *argv[]){
-        ref_type(long) x = ref_new(long);
+        ref_type(long) x;
+        (void) argc;
+        (void) argv;
+        
+        x = ref_new(long);
         ref_acquire(x);
         ref_val(x) = 123456;
         printf("%ld\n", ref_val(x));

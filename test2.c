@@ -17,7 +17,12 @@ void foo(ref_type(my_thing) x){
 }
 
 int main(int argc, char** argv){
-        ref_type(my_thing) x = ref_new(my_thing);
+	ref_type(my_thing) x;
+	
+	(void) argc;
+	(void) argv;
+
+        x = ref_new(my_thing);
         ref_acquire(x);
         
         strncpy(ref_val(x).hello, "Hello world!", 32);
